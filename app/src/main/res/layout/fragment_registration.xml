@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/login_back"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.view.FragmentRegistration">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/welcome_page_button"
+        android:layout_margin="40dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Регистрация"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textStyle="bold"
+            android:id="@+id/txtSignUpToAcc"/>
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Фамилия Имя Отчество"
+            app:layout_constraintTop_toBottomOf="@id/txtSignUpToAcc"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/editTxtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_login"
+            app:layout_constraintTop_toBottomOf="@id/txtName"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="12dp"
+            android:textColorHint="@color/light_gray"
+            android:drawableStart="@drawable/baseline_account_circle_24"
+            android:hint="Болотов Болот Болотович"
+            android:textColor="@color/black"
+            android:drawablePadding="10dp"
+            android:inputType="text"
+            android:importantForAutofill="no" />
+
+
+
+        <TextView
+            android:id="@+id/txtMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Адрес электронной почты"
+            app:layout_constraintTop_toBottomOf="@id/editTxtName"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/editTxtMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_login"
+            app:layout_constraintTop_toBottomOf="@id/txtMail"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="12dp"
+            android:textColorHint="@color/light_gray"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:hint="example@mail.com"
+            android:textColor="@color/black"
+            android:drawablePadding="10dp"
+            android:inputType="textEmailAddress"
+            android:importantForAutofill="no" />
+
+
+        <TextView
+            android:id="@+id/txtPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пароль"
+            app:layout_constraintTop_toBottomOf="@id/editTxtMail"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/editTxtPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_login"
+            app:layout_constraintTop_toBottomOf="@id/txtPass"
+            android:layout_marginStart="10dp"
+            android:textColorHint="@color/light_gray"
+            android:layout_marginEnd="10dp"
+            android:padding="12dp"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:hint="*******"
+            android:textColor="@color/black"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/txtPassConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Повторите пароль"
+            app:layout_constraintTop_toBottomOf="@id/editTxtPass"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/editTxtPassConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_login"
+            app:layout_constraintTop_toBottomOf="@id/txtPassConfirm"
+            android:layout_marginStart="10dp"
+            android:textColorHint="@color/light_gray"
+            android:layout_marginEnd="10dp"
+            android:padding="12dp"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:hint="*******"
+            android:textColor="@color/black"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:importantForAutofill="no" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:id="@+id/btnReg"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/editTxtPassConfirm"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/welcome_page_button"
+            android:backgroundTint="@color/primary"
+            android:text="Регистрация"
+            android:textColor="@color/white"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btnReg"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/welcome_page_button"
+            android:backgroundTint="@color/secondary"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Войти"
+            android:textColor="@color/white"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BiTaza</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="garbage_icon_for_welcome_page">Garbage Icon For Welcome Page</string>
+    <string name="icon">icon</string>
+</resources>
